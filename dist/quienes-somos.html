@@ -5,6 +5,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -17,7 +22,11 @@
 							
 							<!-- Header -->
 							<header id="header"></header>
-
+							<script>
+								$(function(){
+								$("#header").load("assets/includes/nav.html");
+								});
+							</script>
 
 
 							<!-- Content -->
@@ -39,28 +48,20 @@
 
 				<!-- Sidebar -->
 				<div id="sidebar"></div>
-
+				<script>
+					$(function(){
+					$("#sidebar").load("assets/includes/sidenav.html");
+					});
+				</script>
+		
 
 			</div>
 
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+
         <!-- top navigation -->
-		<script>
-			$(function(){
-			$("#header").load("assets/includes/nav.html");
-			});
-		</script>
+
         <!-- side navigation -->
-		<script>
-			$(function(){
-			$("#sidebar").load("assets/includes/sidenav.html");
-			});
-		</script>
 
 	</body>
 </html>
