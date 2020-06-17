@@ -17,7 +17,12 @@
 						<div class="inner">
 							
 							<!-- Header -->
-								<header id="navi"></header>
+								<header id="header"></header>
+								<script>
+									$(function(){
+									$("#header").load("assets/includes/nav.html");
+									});
+								</script>
 
 
 
@@ -78,10 +83,6 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/sidenav.js"></script>
 			<!-- <script src="assets/js/header.js"></script> -->
-			<script>
-				$(function(){
-				$("#navi").load("assets/includes/nav.html");
-				});
-			</script>
+
 	</body>
 </html>
