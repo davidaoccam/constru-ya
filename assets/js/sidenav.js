@@ -17,6 +17,7 @@ if ( document.getElementById("menu") ) {
                 <li><a href=\"productos-y-servicios.html#cuchu-casa\">CUCHU-CASA</a></li>\
             </ul>\
         </li>\
+        <li><a href=\"contactanos.html\"><i class=\"icon solid fa-envelope\" aria-hidden=\"true\"></i> Contactanos</a></li>\
     </ul>\
  ";
  }
