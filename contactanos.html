@@ -4,7 +4,8 @@
 		<title>Quienes Somos - Constru-Ya!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/constru-ya/assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/jquery.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -15,8 +16,13 @@
                 <div id="main">
                     <div class="inner">
 
-                        <!-- Header -->
+							<!-- Header -->
                             <header id="header"></header>
+                            <script>
+                                $(function(){
+                                $("#header").load("assets/includes/nav.html");
+                                });
+                            </script>
 
 							<!-- Content -->
                             <section>
@@ -75,34 +81,13 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search 
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>-->
-
 							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html"><i class="icon solid fa-home" aria-hidden="true"></i> Inicio</a></li>
-										<li><a href="quienes-somos.html"><i class="icon solid fa-users" aria-hidden="true"></i> Quienes Somos</a></li>
-
-										<li>
-											<span class="opener"><i class="icon solid fa-bookmark" aria-hidden="true"></i> Productos y Servicios</span>
-											<ul>
-												<li><a href="productos-y-servicios.html#vivi-prio">Vivienda Prioritaria</a></li>
-												<li><a href="productos-y-servicios.html#casa-joven">Casa Joven</a></li>
-												<li><a href="productos-y-servicios.html#casa-mujer">Casa Mujer Próspera</a></li>
-												<li><a href="productos-y-servicios.html#clp">C. L P. (Construcción en Lote Própio)</a></li>
-												<li><a href="productos-y-servicios.html#cuchu-casa">CUCHU-CASA</a></li>
-											</ul>
-										</li>
-									</ul>
-								</nav>
+                            <nav id="menu"></nav>
+                            <script>
+                                $(function(){
+                                $("#menu").load("assets/includes/sidenav.html");
+                                });
+                            </script>
 
 
 
@@ -129,12 +114,9 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="/constru-ya/assets/js/jquery.min.js"></script>
-			<script src="/constru-ya/assets/js/browser.min.js"></script>
-			<script src="/constru-ya/assets/js/breakpoints.min.js"></script>
-			<script src="/constru-ya/assets/js/util.js"></script>
-			<script src="/constru-ya/assets/js/main.js"></script>
-			<script src="/constru-ya/assets/js/sidenav.js"></script>
-			<script src="/constru-ya/assets/js/header.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 	</body>
 </html>
