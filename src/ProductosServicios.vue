@@ -1,5 +1,6 @@
 <template>
-  <section>
+  <section class="row">
+  <div class="off-2-xlarge col-8-xlarge col-12-small">
     <header class="main">
       <h1>Productos y Servicios:</h1>
     </header>
@@ -68,6 +69,7 @@
     </p>
 
     <span class="image main"><img src="images/plano-2.jpg" alt=""/></span>
+  </div>
   </section>
 </template>
 

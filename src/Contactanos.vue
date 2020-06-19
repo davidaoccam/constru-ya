@@ -1,5 +1,6 @@
 <template>
-  <section>
+  <section class="row">
+  <div class="off-2-xlarge col-8-xlarge col-12-small">
     <h3 class="major">Formulario</h3>
     <form
       method="post"
@@ -68,6 +69,7 @@
           /></li>
       </ul>
     </form>
+  </div>
   </section>
 </template>
 

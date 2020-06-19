@@ -1,8 +1,10 @@
 <template>
-  <section>
+  <section class="row">
     <header class="main">
       <h1>Quienes Somos:</h1>
     </header>
+
+		<div class="off-2-xlarge col-8-xlarge col-12-small">
 
     <p>
       Somos una empresa Guatemalteca, que busca posicionarse como líder
@@ -20,6 +22,9 @@
     <span class="image main"
       ><img src="images/COCINA-COMEDOR.jpg" alt=""
     /></span>
+
+</div>
+
   </section>
 </template>
 
