@@ -2075,7 +2075,7 @@ button,
   display: -ms-flex;
   display: flex;
   border-bottom: solid 5px #ff6300;
-  padding: 2em 0 1em 0;
+  padding: 1em 0 1em 0;
   position: relative; }
   #header > * {
     -moz-flex: 1;
@@ -2093,10 +2093,10 @@ button,
     text-align: right; }
   @media screen and (max-width: 1680px) {
     #header {
-      padding-top: 5em; } }
+      padding-top: 1em; } }
   @media screen and (max-width: 736px) {
     #header {
-      padding-top: 6.5em; }
+      padding-top: 1em; }
       #header .logo {
         font-size: 1.25em;
         margin: 0; }
@@ -2277,3 +2277,17 @@ button,
     .fa-facebook-f { color:#3b5998;}
     .fa-instagram { color:#8a3ab9; }
     .fa-whatsapp { color:#075e54; }
+
+    .footerSlogan {font-family: 'Open Sans', sans-serif; font-size: 3vh; text-align: right; color: #66879f;}
+    /* .mainBlueLine {border: 3px solid #000c9e; width: 20000000px; position: absolute;left: -100px;  bottom:15px} */
+    hr.mainBlueLine {
+        left: -1000px;
+        bottom:15px;
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 400%;
+        border: 3px solid #000c9e;
+      }
+    }
