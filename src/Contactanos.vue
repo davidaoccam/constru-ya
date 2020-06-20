@@ -1,6 +1,6 @@
 <template>
   <section class="row">
-  <div class="off-2-xlarge col-8-xlarge col-12-small">
+  <div class="col-12-xsmall col-12-small col-8-xlarge off-2-xlarge">
     <h3 class="major">Formulario</h3>
     <form
       method="post"

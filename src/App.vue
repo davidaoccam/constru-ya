@@ -2,14 +2,14 @@
   <div class="flip-cards">
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <i
+        <div class="flip-card-front quienesBG">
+          <!--<i
             class="icon solid fa-users fa-5x"
             aria-hidden="true"
           ></i>
-          <h4>Quienes Somos</h4>
+          <h4>Quienes Somos</h4>-->
         </div>
-        <div class="flip-card-back">
+        <div class="flip-card-back fontSizeSmaller">
           <h2>Quienes Somos</h2>
           <p>Somos una empresa Guatemalteca, que busca posicionarse como líder inmobiliario a nivel nacional, dedicada a promover Viviendas y a construir sueños.</p>
           <a href="quienes-somos">Ver más</a>
@@ -19,14 +19,14 @@
 
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <i
+        <div class="flip-card-front productosBG">
+          <!--<i
             class="icon solid fa-bookmark fa-5x"
             aria-hidden="true"
           ></i>
-          <h4>Productos y Servicios</h4>
+          <h4>Productos y Servicios</h4>-->
         </div>
-        <div class="flip-card-back">
+        <div class="flip-card-back fontSizeSmaller">
           <h2>Productos y Servicios</h2>
           <ul class="remove-bullets">
             <li><a href="productos-y-servicios#vivi-prio">Vivienda Prioritaria</a></li>
@@ -42,14 +42,14 @@
 
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <i
+        <div class="flip-card-front contactBG">
+          <!--<i
             class="icon solid fa-bookmark fa-5x"
             aria-hidden="true"
           ></i>
-          <h4>Contactanos</h4>
+          <h4>Contactanos</h4>-->
         </div>
-        <div class="flip-card-back">
+        <div class="flip-card-back fontSizeSmaller">
           <h2>Contactanos</h2>
           <ul class="contact">
             <li class="icon solid fa-envelope"><a href="#">informacion@constru-ya.com.gt</a></li>
@@ -113,7 +113,7 @@ export default {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 25px;
-  padding: 5px 5px 5px 5px;
+  padding:1em;
 }
 
 .flip-card-front {
@@ -122,6 +122,24 @@ export default {
   text-transform: capitalize;
   font-weight: bold;
 }
+
+
+.quienesBG {
+  background-image: url("/images/squares/quienes-somos.jpg");
+  background-size:contain;
+}
+
+.productosBG {
+  background-image: url("/images/squares/productos-servicios.jpg");
+  background-size:contain;
+}
+
+.contactBG {
+  background-image: url("/images/squares/contactanos.jpg");
+  background-size:contain;
+}
+
+.fontSizeSmaller { font-size:90%; }
 
 .flip-card-back h2 {
   color: #ff6300 !important;
@@ -153,61 +171,24 @@ export default {
     justify-content: space-between;
   }
 }
-
 @media only screen and (max-width: 600px) {
-  .flip-card-front {
-    font-size: 1.9em !important;
-  }
-  .flip-card-back {
-    font-size: 1.3em;
-  }
 }
 
 @media only screen and (min-width: 600px) {
-  .flip-card-front {
-    font-size: 1.9em !important;
-  }
-  .flip-card-back {
-    font-size: 1.3em;
-  }
 }
 
 @media only screen and (min-width: 768px) {
-  .flip-card-front {
-    font-size: 1.9em !important;
-  }
-  .flip-card-back {
-    font-size: 1.3em;
-  }
 }
-/*
+
 @media only screen and (min-width: 992px) {
-  .flip-card-front {
-    font-size: 2em !important;
-  }
 }
-*/
+
 @media only screen and (min-width: 1200px) {
-  .flip-card-front {
-    font-size: 1.9em !important;
-  }
 }
 
 @media only screen and (min-width: 1280px) {
-  .flip-card-front {
-    font-size: 1.7em !important;
-  }
-  .flip-card-back {
-    font-size: 1.1em;
-  }
 }
 
 @media only screen and (min-width: 1680px) {
-  .flip-card-front {
-    font-size: 1.4em !important;
-  }
-  .flip-card-back {
-    font-size: 0.9em;
-  }
 }
 </style>
