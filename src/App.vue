@@ -7,7 +7,7 @@
             class="icon solid fa-users fa-5x"
             aria-hidden="true"
           ></i>
-          <p>Quienes Somos</p>
+          <h4>Quienes Somos</h4>
         </div>
         <div class="flip-card-back">
           <h2>Quienes Somos</h2>
@@ -24,7 +24,7 @@
             class="icon solid fa-bookmark fa-5x"
             aria-hidden="true"
           ></i>
-          <p>Productos y Servicios</p>
+          <h4>Productos y Servicios</h4>
         </div>
         <div class="flip-card-back">
           <h2>Productos y Servicios</h2>
@@ -47,7 +47,7 @@
             class="icon solid fa-bookmark fa-5x"
             aria-hidden="true"
           ></i>
-          <p>Contactanos</p>
+          <h4>Contactanos</h4>
         </div>
         <div class="flip-card-back">
           <h2>Contactanos</h2>
@@ -113,6 +113,7 @@ export default {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 25px;
+  padding: 5px 5px 5px 5px;
 }
 
 .flip-card-front {
@@ -152,45 +153,61 @@ export default {
     justify-content: space-between;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .flip-card-front {
-    font-size: 2em !important;
+    font-size: 1.9em !important;
+  }
+  .flip-card-back {
+    font-size: 1.3em;
   }
 }
 
 @media only screen and (min-width: 600px) {
   .flip-card-front {
-    font-size: 2em !important;
+    font-size: 1.9em !important;
+  }
+  .flip-card-back {
+    font-size: 1.3em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .flip-card-front {
-    font-size: 2em !important;
+    font-size: 1.9em !important;
+  }
+  .flip-card-back {
+    font-size: 1.3em;
   }
 }
-
+/*
 @media only screen and (min-width: 992px) {
   .flip-card-front {
     font-size: 2em !important;
   }
 }
-
+*/
 @media only screen and (min-width: 1200px) {
   .flip-card-front {
-    font-size: 2em !important;
+    font-size: 1.9em !important;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .flip-card-front {
-    font-size: 1.8em !important;
+    font-size: 1.7em !important;
+  }
+  .flip-card-back {
+    font-size: 1.1em;
   }
 }
 
 @media only screen and (min-width: 1680px) {
   .flip-card-front {
-    font-size: 1.6em !important;
+    font-size: 1.4em !important;
+  }
+  .flip-card-back {
+    font-size: 0.9em;
   }
 }
 </style>
