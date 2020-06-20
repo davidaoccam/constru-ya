@@ -1,7 +1,7 @@
 <template>
   <section class="row">
     <header class="main">
-      <h1>Quienes Somos:</h1>
+      <h1>Quiénes Somos:</h1>
     </header>
 
 		<div class="off-2-xlarge col-8-xlarge col-12-small">

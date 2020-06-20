@@ -7,10 +7,10 @@
             class="icon solid fa-users fa-5x"
             aria-hidden="true"
           ></i>
-          <h4>Quienes Somos</h4>-->
+          <h4>Quiénes Somos</h4>-->
         </div>
         <div class="flip-card-back fontSizeSmaller">
-          <h2>Quienes Somos</h2>
+          <h2>Quiénes Somos</h2>
           <p>Somos una empresa Guatemalteca, que busca posicionarse como líder inmobiliario a nivel nacional, dedicada a promover Viviendas y a construir sueños.</p>
           <a href="quienes-somos">Ver más</a>
         </div>
@@ -50,7 +50,7 @@
           <h4>Contactanos</h4>-->
         </div>
         <div class="flip-card-back fontSizeSmaller">
-          <h2>Contactanos</h2>
+          <h2>Contáctanos</h2>
           <ul class="contact">
             <li class="icon solid fa-envelope"><a href="#">informacion@constru-ya.com.gt</a></li>
             <li class="icon solid fa-phone">(000) 000-0000</li>
