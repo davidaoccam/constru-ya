@@ -72,7 +72,6 @@ export default {
 
 <style scoped>
 .flip-cards {
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -87,7 +86,7 @@ export default {
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  margin: 25px 25px 25px 25px;
+  margin: 25px auto 25px auto;
   flex: 0 1 24%;
 }
 
@@ -99,6 +98,7 @@ export default {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -112,6 +112,7 @@ export default {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 25px;
 }
 
 .flip-card-front {
