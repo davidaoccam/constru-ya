@@ -209,12 +209,8 @@
       <ul class="actions">
         <li><input
             type="submit"
-            value="Send Message"
+            value="Enviar Mensaje"
             class="primary"
-          /></li>
-        <li><input
-            type="reset"
-            value="Reset"
           /></li>
       </ul>
     </form>
