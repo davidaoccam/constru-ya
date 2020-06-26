@@ -354,7 +354,8 @@ hr {
       margin-top: -3em; }
       .row.gtr-200.gtr-uniform > * {
         padding-top: 3em; }
-  @media screen and (max-width: 1680px) {
+  /* @media screen and (max-width: 1680px) { */
+  @media screen and (min-width: 1281px) {
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -1126,7 +1127,7 @@ input[type="radio"] {
     input[type="radio"] + label:before {
       background: #ffffff;
       border-radius: 0.375em;
-      border: solid 1px rgba(210, 215, 217, 0.75);
+      border: solid 2px #ff6300;
       content: '';
       display: inline-block;
       font-size: 0.8em;
@@ -1997,7 +1998,8 @@ button,
       width: inherit; }
   #sidebar.inactive {
     margin-left: -26em; }
-  @media screen and (max-width: 1680px) {
+  /* @media screen and (max-width: 1680px) { */
+  @media screen and (min-width: 1281px) {
     #sidebar {
       width: 24em; }
       #sidebar > .inner {
@@ -2277,6 +2279,8 @@ button,
     .fa-facebook-f { color:#3b5998;}
     .fa-instagram { color:#8a3ab9; }
     .fa-whatsapp { color:#075e54; }
+
+    .orangeText {color:#ff6300;}
 
     .footerSlogan {font-family: 'Open Sans', sans-serif; font-size: 3vh; text-align: right; color: #66879f;}
     /* .mainBlueLine {border: 3px solid #000c9e; width: 20000000px; position: absolute;left: -100px;  bottom:15px} */

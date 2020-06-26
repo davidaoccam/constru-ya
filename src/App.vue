@@ -126,17 +126,17 @@ export default {
 
 .quienesBG {
   background-image: url("/images/squares/quienes-somos.jpg");
-  background-size:contain;
+  background-size: 100% 100%;
 }
 
 .productosBG {
   background-image: url("/images/squares/productos-servicios.jpg");
-  background-size:contain;
+  background-size: 100% 100%;
 }
 
 .contactBG {
   background-image: url("/images/squares/contactanos.jpg");
-  background-size:contain;
+  background-size: 100% 100%;
 }
 
 .fontSizeSmaller { font-size:90%; }
