@@ -6,6 +6,7 @@ import NotFound from "./NotFound.vue";
 import Contactanos from "./Contactanos.vue";
 import ProductosServicios from "./ProductosServicios.vue";
 import QuienesSomos from "./QuienesSomos.vue";
+import Vuelidate from "vuelidate";
 
 Vue.config.productionTip = false;
 
@@ -16,6 +17,7 @@ const routes = {
   "/quienes-somos": QuienesSomos,
 };
 
+Vue.use(Vuelidate);
 new Vue({
   data: {
     currentRoute: window.location.pathname,
