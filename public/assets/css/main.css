@@ -3132,3 +3132,5 @@ hr.mainBlueLine {
   margin-left: -20px;
   margin-right: -35px;
 }
+
+.social-media { max-height: 50px; max-width: auto;}

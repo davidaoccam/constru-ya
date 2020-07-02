@@ -50,11 +50,11 @@
           <h4>Contactanos</h4>-->
         </div>
         <div class="flip-card-back fontSizeSmaller">
-          <h2>Contáctanos</h2>
+          <h2>Dirección</h2>
           <ul class="contact">
-            <li class="icon solid fa-envelope"><a href="#">informacion@constru-ya.com.gt</a></li>
-            <li class="icon solid fa-phone">(000) 000-0000</li>
-            <li class="icon solid fa-home">1234 Somewhere Ave.</li>
+            <li class="icon solid fa-home">Circunvalación de Mazatenango<br>
+            Km 160 CA-2<br><small>junto a bóveda,
+            que va a San Francisco Zapotitlan en instalaciones de Cerámicas Modernas, Mazatenango.</small></li>
           </ul>
         </div>
       </div>
