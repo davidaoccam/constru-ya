@@ -21,9 +21,7 @@
               v-model.trim="$v.form.nombre.$model"
               :class="status($v.form.nombre)"
             />
-            <label for="cya-name"
-              >Nombre y apellido<span class="orangeText">*</span></label
-            >
+            <label for="cya-name">Nombre y apellido<span class="orangeText">*</span></label>
           </div>
           <!-- form.dpi -->
           <div class="field half">
@@ -56,9 +54,7 @@
               v-model="$v.form.telefono.$model"
               :class="status($v.form.telefono)"
             />
-            <label for="cya-telefono"
-              >Número de teléfono<span class="orangeText">*</span></label
-            >
+            <label for="cya-telefono">Número de teléfono<span class="orangeText">*</span></label>
           </div>
           <!-- form.genero -->
           <div class="field">
@@ -81,9 +77,7 @@
               v-model="$v.form.nacimiento.$model"
               :class="status($v.form.nacimiento)"
             />
-            <label for="cya-email"
-              >Fecha de nacimiento<span class="orangeText">*</span></label
-            >
+            <label for="cya-email">Fecha de nacimiento<span class="orangeText">*</span></label>
           </div>
           <!-- form.viviendaPara -->
           <div class="field">
@@ -92,18 +86,10 @@
               :class="status($v.form.viviendaPara)"
             >
               <option value="">-</option>
-              <option value="Vivir en ella (solucionar una necesidad)"
-                >Vivir en ella (solucionar una necesidad)</option
-              >
-              <option value="Como inversión (alquilarla o tener otra propiedad)"
-                >Como inversión (alquilarla o tener otra propiedad)</option
-              >
+              <option value="Vivir en ella (solucionar una necesidad)">Vivir en ella (solucionar una necesidad)</option>
+              <option value="Como inversión (alquilarla o tener otra propiedad)">Como inversión (alquilarla o tener otra propiedad)</option>
             </select>
-            <label for="cya-interes"
-              >Le interesa adquirir vivienda para:<span class="orangeText"
-                >*</span
-              ></label
-            >
+            <label for="cya-interes">Le interesa adquirir vivienda para:<span class="orangeText">*</span></label>
           </div>
           <!-- form.estadoCivil -->
           <div class="field">
@@ -116,9 +102,7 @@
               <option value="Casado(a)">Casado(a)</option>
               <option value="Unido(a)">Unido(a)</option>
             </select>
-            <label for="cya-estadoCivil"
-              >Estado Civil<span class="orangeText">*</span></label
-            >
+            <label for="cya-estadoCivil">Estado Civil<span class="orangeText">*</span></label>
           </div>
           <!-- form.personas -->
           <div class="field half">
@@ -129,12 +113,7 @@
               v-model="$v.form.personas.$modal"
               :class="status($v.form.personas)"
             />
-            <label for="cya-totalPersonas"
-              >Número total de personas que habitarían en la vivienda<span
-                class="orangeText"
-                >*</span
-              ></label
-            >
+            <label for="cya-totalPersonas">Número total de personas que habitarían en la vivienda<span class="orangeText">*</span></label>
           </div>
           <!-- form.integrantes -->
           <div class="field">
@@ -148,18 +127,12 @@
               <option value="2 hijos(as)">2 hijos(as)</option>
               <option value="3 hijos(as)">3 hijos(as)</option>
               <option value="Más de 3 hijos(as)">Más de 3 hijos(as)</option>
-              <option value="Madre/Padre - Suegra/Suegro"
-                >Madre/Padre - Suegra/Suegro</option
-              >
+              <option value="Madre/Padre - Suegra/Suegro">Madre/Padre - Suegra/Suegro</option>
               <option value="Otro familiar">Otro familiar</option>
-              <option value="Soltero(a) / No sabe (estará en alquiler)"
-                >Soltero(a) / No sabe (estará en alquiler)</option
-              >
+              <option value="Soltero(a) / No sabe (estará en alquiler)">Soltero(a) / No sabe (estará en alquiler)</option>
             </select>
-            <label for="cya-totalPersonas"
-              >Descripción de los integrantes del hogar que habitarían la
-              vivienda<span class="orangeText">*</span></label
-            >
+            <label for="cya-totalPersonas">Descripción de los integrantes del hogar que habitarían la
+              vivienda<span class="orangeText">*</span></label>
           </div>
           <!-- form.ingreso -->
           <div class="field">
@@ -169,21 +142,13 @@
             >
               <option value="">-</option>
               <option value="Menor a Q5,500">Menor a Q5,500</option>
-              <option value="Entre Q5,500 y Q8,250"
-                >Entre Q5,500 y Q8,250</option
-              >
-              <option value="Entre Q8,250 y Q11,000"
-                >Entre Q8,250 y Q11,000</option
-              >
-              <option value="Entre Q11,000 y Q15,000"
-                >Entre Q11,000 y Q15,000</option
-              >
+              <option value="Entre Q5,500 y Q8,250">Entre Q5,500 y Q8,250</option>
+              <option value="Entre Q8,250 y Q11,000">Entre Q8,250 y Q11,000</option>
+              <option value="Entre Q11,000 y Q15,000">Entre Q11,000 y Q15,000</option>
               <option value="Mayor a Q15,000">Mayor a Q15,000</option>
             </select>
-            <label for="cya-ingresos"
-              >Ubique sus ingresos familiares en una de las siguientes
-              opciones:<span class="orangeText">*</span></label
-            >
+            <label for="cya-ingresos">Ubique sus ingresos familiares en una de las siguientes
+              opciones:<span class="orangeText">*</span></label>
           </div>
           <!-- form.departamento -->
           <div class="field half">
@@ -194,11 +159,7 @@
               v-model="$v.form.departamento.$model"
               :class="status($v.form.departamento)"
             />
-            <label for="cya-departamento"
-              >Departamento donde vive actualmente<span class="orangeText"
-                >*</span
-              ></label
-            >
+            <label for="cya-departamento">Departamento donde vive actualmente<span class="orangeText">*</span></label>
           </div>
           <!-- form.municipio -->
           <div class="field half">
@@ -209,11 +170,7 @@
               v-model="$v.form.municipio.$model"
               :class="status($v.form.municipio)"
             />
-            <label for="cya-municipio"
-              >Municipio donde vive actualmente<span class="orangeText"
-                >*</span
-              ></label
-            >
+            <label for="cya-municipio">Municipio donde vive actualmente<span class="orangeText">*</span></label>
           </div>
           <!-- form.alquila -->
           <div class="field">
@@ -225,9 +182,7 @@
               <option value="Sí">Sí</option>
               <option value="No">No</option>
             </select>
-            <label for="cya-ingresos"
-              >¿Alquila actualmente?<span class="orangeText">*</span></label
-            >
+            <label for="cya-ingresos">¿Alquila actualmente?<span class="orangeText">*</span></label>
           </div>
           <!-- form.pagoAlquiler -->
           <div class="field">
@@ -236,30 +191,16 @@
               :class="status($v.form.pagoAlquiler)"
             >
               <option value="-">-</option>
-              <option value="No paga (vive en casa de un familiar/amigo)"
-                >No paga (vive en casa de un familiar/amigo)</option
-              >
+              <option value="No paga (vive en casa de un familiar/amigo)">No paga (vive en casa de un familiar/amigo)</option>
               <option value="Menos de Q800">Menos de Q800</option>
               <option value="Entre Q800 y Q1,200">Entre Q800 y Q1,200</option>
-              <option value="Entre Q1,200 y Q1,600"
-                >Entre Q1,200 y Q1,600</option
-              >
-              <option value="Entre Q1,600 y Q2,000"
-                >Entre Q1,600 y Q2,000</option
-              >
-              <option value="Entre Q2,000 y Q3,500"
-                >Entre Q2,000 y Q3,500</option
-              >
-              <option value="Entre Q3,500 y Q5,000"
-                >Entre Q3,500 y Q5,000</option
-              >
+              <option value="Entre Q1,200 y Q1,600">Entre Q1,200 y Q1,600</option>
+              <option value="Entre Q1,600 y Q2,000">Entre Q1,600 y Q2,000</option>
+              <option value="Entre Q2,000 y Q3,500">Entre Q2,000 y Q3,500</option>
+              <option value="Entre Q3,500 y Q5,000">Entre Q3,500 y Q5,000</option>
               <option value="Más de Q5,000">Más de Q5,000</option>
             </select>
-            <label for="cya-alquiler"
-              >¿Cuánto paga de alquiler al mes?<span class="orangeText"
-                >*</span
-              ></label
-            >
+            <label for="cya-alquiler">¿Cuánto paga de alquiler al mes?<span class="orangeText">*</span></label>
           </div>
           <!-- form.terreno -->
           <div class="field">
@@ -271,9 +212,7 @@
               <option value="Sí">Sí</option>
               <option value="No">No</option>
             </select>
-            <label for="cya-terrenoPropio"
-              >¿Tiene terreno Própio?<span class="orangeText">*</span></label
-            >
+            <label for="cya-terrenoPropio">¿Tiene terreno Própio?<span class="orangeText">*</span></label>
           </div>
           <br /><br />
           <!-- form.confirmacion -->
@@ -285,12 +224,7 @@
               value="false"
               v-model="form.confirmacion"
             />
-            <label for="cya-autorizacion"
-              >Conocimiento y autorización de uso de la información<span
-                class="orangeText"
-                >*</span
-              ></label
-            ><br />
+            <label for="cya-autorizacion">Conocimiento y autorización de uso de la información<span class="orangeText">*</span></label><br />
             Estoy enterado/a que la información de este formulario será
             utilizada por la Empresa Promotora de Vivienda Construya para
             conformar un registro de interesados en adquirir vivienda y para
@@ -309,7 +243,10 @@
               }"
               @click.prevent="enviar"
             >
-              <i class="icon solid fa-sync fa-spin" v-if="enviando"></i>
+              <i
+                class="icon solid fa-sync fa-spin"
+                v-if="enviando"
+              ></i>
               <span v-if="!enviando">Enviar Mensaje</span>
             </a>
           </li>
@@ -317,7 +254,10 @@
       </div>
     </div>
 
-    <modal v-if="mostrarModal" @close="mostrarModal = false">
+    <modal
+      v-if="mostrarModal"
+      @close="mostrarModal = false"
+    >
       <p slot="body">{{ mensaje }}</p>
     </modal>
   </section>
@@ -334,7 +274,7 @@ export default {
   components: {
     modal,
   },
-  data() {
+  data () {
     return {
       enviando: false,
       mostrarModal: false,
@@ -433,12 +373,11 @@ export default {
     },
   },
   methods: {
-    async enviar() {
+    async enviar () {
       this.enviando = true;
       const self = this;
       try {
-        const token =
-          "12ca17b49af2289436f303e0166030a21e525d266e209267433801a8fd4071a0";
+        const token = crypto.randomBytes(20).toString('hex');
 
         const hash = crypto.createHmac("sha256", token);
         hash.update(JSON.stringify(this.form));
@@ -447,7 +386,7 @@ export default {
         await axios({
           timeout: 1000 * 30,
           method: "POST",
-          url: "http://api.constru-ya.com:5000/api/email/send",
+          url: "https://api.construya.com.gt/api/email/send",
           data: this.form,
           headers: {
             "Content-Type": "application/json",
@@ -470,7 +409,7 @@ export default {
       this.enviando = false;
       this.mostrarModal = true;
     },
-    status(validation) {
+    status (validation) {
       return {
         error: validation.$error,
         dirty: validation.$dirty,
