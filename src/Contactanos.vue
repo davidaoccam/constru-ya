@@ -400,7 +400,7 @@ export default {
           })
           .catch((errorAxios) => {
             console.log({ errorAxios });
-            self.mensaje = `Ha ocurrido un error al enviar su mensaje: ${errorAxios.response.statusText}`;
+            self.mensaje = `Ha ocurrido un error al enviar su mensaje: ${errorAxios}`;
           });
       } catch (errorGeneral) {
         console.log({ errorGeneral });
