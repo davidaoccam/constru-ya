@@ -8,8 +8,6 @@ import ProductosServicios from "./ProductosServicios.vue";
 import QuienesSomos from "./QuienesSomos.vue";
 import Vuelidate from "vuelidate";
 
-Vue.config.productionTip = false;
-
 const routes = {
   "/": Index,
   "/contactanos": Contactanos,
@@ -18,6 +16,10 @@ const routes = {
 };
 
 Vue.use(Vuelidate);
+
+Vue.config.productionTip = false;
+Vue.config.devtools = false;
+
 new Vue({
   data: {
     currentRoute: window.location.pathname,
