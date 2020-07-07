@@ -2828,14 +2828,14 @@ button:disabled,
     width: 7.25em;
   }
   #sidebar .toggle:before {
-    color: #7f888f;
+    /* color: #7f888f; */
     margin-left: -0.0625em;
     margin-top: -0.25em;
     font-size: 1.1rem;
     z-index: 1;
   }
   #sidebar .toggle:after {
-    background: rgba(222, 225, 226, 0.75);
+    /* background: rgba(222, 225, 226, 0.75); */
     border-radius: 0.375em;
     content: "";
     height: 3.5em;
@@ -3117,9 +3117,16 @@ button:disabled,
 .footerSlogan {
   font-family: "Open Sans", sans-serif;
   font-size: 3vh;
-  text-align: right;
-  color: #66879f;
+
+  color: white;
+  background-color: #000c9e;
+  width:100%;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;   
 }
+
 hr.mainBlueLine {
   bottom: 15px;
   content: "";
@@ -3133,4 +3140,31 @@ hr.mainBlueLine {
   margin-right: -35px;
 }
 
-.social-media { max-height: 50px; max-width: auto;}
+.social-media { 
+  max-width: 100px;
+  display: block;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+.socialUL {
+  position: relative; 
+  float: right; 
+  display: inline-flex; 
+  right:-15px;
+}
+.socialContainer {
+  position:relative; 
+  width:15%;
+}
+
+.logoContainer {
+  position:relative;
+  width: 85%;
+}
+
+
+@media screen and (orientation: portrait) and (max-width: 480px) {
+  hr.mainBlueLine {
+    border: 1px solid #000c9e;
+  }
+}
