@@ -192,7 +192,7 @@ export default {
 }
 
 .noBG {
-  background-image: url("/images/logoconstruya.png");
+  background-image: url("/images/LogoConstruYa.png");
 
   background-position: center;
   background-repeat: no-repeat;
