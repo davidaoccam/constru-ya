@@ -6,6 +6,7 @@ import NotFound from "./NotFound.vue";
 import Contactanos from "./Contactanos.vue";
 import ProductosServicios from "./ProductosServicios.vue";
 import QuienesSomos from "./QuienesSomos.vue";
+import Precalifica from "./Precalifica.vue";
 import Vuelidate from "vuelidate";
 
 const routes = {
@@ -13,6 +14,7 @@ const routes = {
   "/contactanos": Contactanos,
   "/productos-y-servicios": ProductosServicios,
   "/quienes-somos": QuienesSomos,
+  "/precalifica": Precalifica,
 };
 
 Vue.use(Vuelidate);
