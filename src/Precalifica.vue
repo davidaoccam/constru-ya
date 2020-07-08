@@ -279,6 +279,7 @@ export default {
       enviando: false,
       mostrarModal: false,
       mensaje: "",
+      hayError: false,
       form: {
         nombre: "",
         dpi: "",
@@ -402,10 +403,12 @@ export default {
               "Su mensaje ha sido enviado y se revisará a la brevedad. Estaremos contactándole.";
           })
           .catch((errorAxios) => {
+            self.hayError = true;
             console.log({ errorAxios });
             self.mensaje = `Ha ocurrido un error al enviar su mensaje: ${errorAxios}`;
           });
       } catch (errorGeneral) {
+        this.hayError = true;
         console.log({ errorGeneral });
         this.mensaje = `Ha ocurrido un error al enviar su mensaje: ${errorGeneral.message}`;
       }
@@ -420,7 +423,7 @@ export default {
     },
     modalCerrado () {
       this.mostrarModal = false
-      if (this.mensaje.length === 0)
+      if (!this.hayError)
         location.href = "precalifica"
     }
   },
