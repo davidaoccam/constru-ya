@@ -47,7 +47,7 @@
           <p>
             Llena nuestro Formulario de Precalificación Para Vivienda Prioritaria.
           </p>
-          <a href="contactanos">
+          <a href="precalifica">
             Llenar
           </a>
         </div>
@@ -202,10 +202,6 @@ export default {
   background-size: 100%;
 }
 
-.fontSizeSmaller {
-  font-size: 90%;
-}
-
 .flip-card-back h2 {
   color: #ff6300 !important;
 }
@@ -227,14 +223,65 @@ export default {
 .remove-bullets {
   list-style-type: none;
 }
-@media screen and (min-width: 100px) {
+
+@media screen and (min-width: 1084px) {
+  .line-break {
+    width: 100%;
+  }
+}
+/*
+
+xlarge: [1281px, 1680px]
+large: [981px, 1280px]
+medium: [737px, 980px]
+small: [481px, 736px]
+
+xsmall: [361px, 480px]
+xxsmall: [null, 360px]
+xlarge-to-max: (min-width: 1681px)
+small-to-xlarge: (min-width: 481px) and (max-width: 1680px)
+
+*/
+@media screen and (min-width: 1px) {
   .line-break {
     width: 0%;
   }
+  .fontSizeSmaller {
+    font-size: 1.2em;
+  }
+  .bgc {
+    background-color: #fff;
+  }
 }
-@media screen and (min-width: 1083px) {
-  .line-break {
-    width: 100%;
+@media screen and (min-width: 481px) {
+  .bgc {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 737px) {
+  .bgc {
+    background-color: orange;
+  }
+}
+@media screen and (min-width: 981px) {
+  .bgc {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 1281px) {
+  .fontSizeSmaller {
+    font-size: 1.1em;
+  }
+  .bgc {
+    background-color: yellowgreen;
+  }
+}
+@media screen and (min-width: 1681px) {
+  .fontSizeSmaller {
+    font-size: 0.9em;
+  }
+  .bgc {
+    background-color: green;
   }
 }
 </style>
