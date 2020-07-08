@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700|Yellowtail");
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -3129,10 +3129,10 @@ button:disabled,
 }
 
 .footerSlogan {
-  font-family: "Open Sans", sans-serif;
-  font-size: 3vh;
+  font-family: "Yellowtail", cursive;
+  font-size: 2.1em;
 
-  color: white;
+  color: #ff6300;
   background-color: #000c9e;
   width: 100%;
   height: 100px;
