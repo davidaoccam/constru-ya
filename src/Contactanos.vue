@@ -147,7 +147,7 @@ export default {
         await axios({
           timeout: 1000 * 30,
           method: "POST",
-          url: "http://localhost:5000/api/email/send",
+          url: "https://api.construya.com.gt/api/email/send",
           data: this.form,
           headers: {
             "Content-Type": "application/json",

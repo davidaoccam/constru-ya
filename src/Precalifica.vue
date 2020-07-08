@@ -424,14 +424,6 @@ export default {
 .fa-spin {
   display: block !important;
 }
-
-/*input {
-  border: 1px solid silver;
-  border-radius: 4px;
-  background: white;
-  padding: 5px 10px;
-}
-*/
 .dirty {
   border-color: #5a5;
   background: #efe;
