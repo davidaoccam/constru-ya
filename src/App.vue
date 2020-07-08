@@ -1,5 +1,6 @@
 <template>
   <div class="flip-cards">
+    <!--Quienes somos-->
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front quienesBG">
@@ -17,6 +18,43 @@
       </div>
     </div>
 
+    <!--Vivienda Prioritaria-->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front noBG">
+          <h2>Vivienda Prioritaria</h2>
+        </div>
+        <div class="flip-card-back fontSizeSmaller">
+          <h2>Vivienda Prioritaria</h2>
+          <p>
+            Es un Programa con el cual fortalecemos el rol eminentemente social de nuestra promotora, que consiste en la Construcción en lote propio.
+          </p>
+          <a href="productos-y-servicios#vivi-prio">
+            Ver más
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Precalifica-->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front noBG">
+          <h2>Precalifica</h2>
+        </div>
+        <div class="flip-card-back fontSizeSmaller">
+          <h2>Precalifica</h2>
+          <p>
+            Llena nuestro Formulario de Precalificación Para Vivienda Prioritaria.
+          </p>
+          <a href="contactanos">
+            Llenar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Productos y Servicios-->
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front productosBG">
@@ -39,7 +77,7 @@
         </div>
       </div>
     </div>
-
+    <!--Contactanos-->
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front contactBG">
@@ -53,12 +91,14 @@
           <h2>Dirección</h2>
           <ul class="contact">
             <li class="icon solid fa-home">Circunvalación de Mazatenango<br>
-            Km 160 CA-2<br><small>junto a bóveda,
-            que va a San Francisco Zapotitlan en instalaciones de Cerámicas Modernas, Mazatenango.</small></li>
+              Km 160 CA-2<br><small>junto a bóveda,
+                que va a San Francisco Zapotitlan en instalaciones de Cerámicas Modernas, Mazatenango.</small></li>
           </ul>
         </div>
       </div>
     </div>
+
+    <div class="line-break"></div>
 
   </div>
 </template>
@@ -74,20 +114,23 @@ export default {
 .flip-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /*background-image: url("/images/modelo-t33-33.jpg");
-  background-repeat: repeat-x;*/
+  justify-content: center;
   height: 100%;
 }
 
 .flip-card {
   background-color: transparent;
   min-width: 300px;
-  width: 300px;
+  max-width: 300px;
+  width: 30%;
   height: 300px;
   perspective: 1000px;
-  margin: 25px auto 25px auto;
-  flex: 0 1 24%;
+  margin: 25px 10px 25px 10px;
+  flex: 0 1 30%;
+}
+
+.line-break {
+  width: 100%;
 }
 
 .flip-card-inner {
@@ -113,7 +156,7 @@ export default {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 25px;
-  padding:1em;
+  padding: 1em;
 }
 
 .flip-card-front {
@@ -123,6 +166,15 @@ export default {
   font-weight: bold;
 }
 
+.flip-card-front h2 {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  color: #fff;
+  font-weight: normal;
+}
 
 .quienesBG {
   background-image: url("/images/squares/quienes-somos.jpg");
@@ -139,7 +191,18 @@ export default {
   background-size: 100% 100%;
 }
 
-.fontSizeSmaller { font-size:90%; }
+.noBG {
+  background-image: url("/images/logoconstruya.png");
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+}
+
+.fontSizeSmaller {
+  font-size: 90%;
+}
 
 .flip-card-back h2 {
   color: #ff6300 !important;
@@ -162,33 +225,14 @@ export default {
 .remove-bullets {
   list-style-type: none;
 }
-
-/* Flexbox stuff */
-@media screen and (min-width: 992px) {
-  .flip-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media screen and (min-width: 100px) {
+  .line-break {
+    width: 0%;
   }
 }
-@media only screen and (max-width: 600px) {
-}
-
-@media only screen and (min-width: 600px) {
-}
-
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
-}
-
-@media only screen and (min-width: 1280px) {
-}
-
-@media only screen and (min-width: 1680px) {
+@media screen and (min-width: 1083px) {
+  .line-break {
+    width: 100%;
+  }
 }
 </style>
