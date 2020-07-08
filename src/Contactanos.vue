@@ -80,7 +80,7 @@
 
     <modal
       v-if="mostrarModal"
-      @close="mostrarModal = false"
+      @close="modalCerrado"
     >
       <p slot="body">{{ mensaje }}</p>
     </modal>
@@ -176,6 +176,11 @@ export default {
         dirty: validation.$dirty,
       };
     },
+    modalCerrado () {
+      this.mostrarModal = false
+      if (this.mensaje.length === 0)
+        location.href = "contactanos"
+    }
   },
 };
 </script>

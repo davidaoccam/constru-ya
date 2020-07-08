@@ -256,7 +256,7 @@
 
     <modal
       v-if="mostrarModal"
-      @close="mostrarModal = false"
+      @close="modalCerrado"
     >
       <p slot="body">{{ mensaje }}</p>
     </modal>
@@ -310,6 +310,7 @@ export default {
         required,
         minLength: minLength(13),
         maxLength: maxLength(13),
+        numeric
       },
       nit: {
         required,
@@ -417,6 +418,11 @@ export default {
         dirty: validation.$dirty,
       };
     },
+    modalCerrado () {
+      this.mostrarModal = false
+      if (this.mensaje.length === 0)
+        location.href = "precalifica"
+    }
   },
 };
 </script>
