@@ -102,7 +102,7 @@
           <ul class="contact">
             <li class="icon solid fa-home"><a
                 target="_blank"
-                href="https://www.google.com/maps/search/Ceramicas%20Modernas/@14.552201342124,-91.513599440087,17z"
+                href="contactanos"
               >Circunvalación de Mazatenango<br>
                 Km 160 CA-2<br><small>junto a bóveda,
                   que va a San Francisco Zapotitlan en instalaciones de Cerámicas Modernas, Mazatenango.</small></a></li>
