@@ -139,10 +139,6 @@ export default {
   flex: 0 1 30%;
 }
 
-.line-break {
-  width: 100%;
-}
-
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -247,9 +243,9 @@ export default {
 }*/
 
 @media screen and (min-width: 1084px) {
-  .line-break {
+  /*.line-break {
     width: 100%;
-  }
+  }*/
 }
 /*
 
@@ -301,6 +297,9 @@ small-to-xlarge: (min-width: 481px) and (max-width: 1680px)
   }
 }
 @media screen and (min-width: 1281px) {
+  .line-break {
+    width: 100%;
+  }
   .fontSizeSmaller {
     font-size: 1.1em;
   }
