@@ -3,12 +3,12 @@
     <!--Quienes somos-->
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front quienesBG">
-          <!--<i
-            class="icon solid fa-users fa-5x"
+        <div class="flip-card-front">
+          <i
+            class="icon solid fa-users big-icon"
             aria-hidden="true"
           ></i>
-          <h4>Quiénes Somos</h4>-->
+          <h2>Quiénes Somos</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2>Quiénes Somos</h2>
@@ -21,7 +21,11 @@
     <!--Vivienda Prioritaria-->
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front noBG">
+        <div class="flip-card-front">
+          <span class="fa-stack fa-6x">
+            <i class="fas fa-arrow-up fa-stack-1x to-top"></i>
+            <i class="fas fa-home fa-stack-2x"></i>
+          </span>
           <h2>Vivienda Prioritaria</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
@@ -39,7 +43,11 @@
     <!--Precalifica-->
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front noBG">
+        <div class="flip-card-front">
+          <i
+            class="icon solid fa-file-signature big-icon"
+            aria-hidden="true"
+          ></i>
           <h2>Precalifica</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
@@ -224,6 +232,20 @@ export default {
   list-style-type: none;
 }
 
+.fa-file-signature {
+  left: 25px;
+}
+
+.to-top {
+  color: #4bb543 !important;
+  font-size: 0.8em;
+}
+
+/*.big-icon,
+.fas {
+  color: black;
+}*/
+
 @media screen and (min-width: 1084px) {
   .line-break {
     width: 100%;
@@ -252,6 +274,16 @@ small-to-xlarge: (min-width: 481px) and (max-width: 1680px)
   .bgc {
     background-color: #fff;
   }
+  .big-icon {
+    font-size: 11em;
+  }
+  .fa-stack {
+    top: 45px;
+  }
+  .to-top {
+    top: -80px;
+    left: 50px;
+  }
 }
 @media screen and (min-width: 481px) {
   .bgc {
@@ -275,6 +307,13 @@ small-to-xlarge: (min-width: 481px) and (max-width: 1680px)
   .bgc {
     background-color: yellowgreen;
   }
+  .fa-stack {
+    top: 35px;
+  }
+  .to-top {
+    top: -90px;
+    left: 55px;
+  }
 }
 @media screen and (min-width: 1681px) {
   .fontSizeSmaller {
@@ -282,6 +321,15 @@ small-to-xlarge: (min-width: 481px) and (max-width: 1680px)
   }
   .bgc {
     background-color: green;
+  }
+  .big-icon {
+    font-size: 9em;
+  }
+  .to-top {
+    left: 54px;
+  }
+  .fa-stack {
+    font-size: 5em;
   }
 }
 </style>
