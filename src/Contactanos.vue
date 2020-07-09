@@ -1,59 +1,85 @@
 <template>
-  <section class="row">
-    <div class="col-12-xsmall col-12-small col-8-xlarge off-2-xlarge">
-      <h3 class="major">
-        Ponte en contacto con nosotros.
-      </h3>
-      <p>
-        Queremos conocer tus comentarios, por favor llena el formulario para hacérnoslos llegar.<br />
-        <span class="orangeText">*Obligatorio</span>
-      </p>
+  <section>
+    <div class="row">
+      <div class="col-12-xsmall col-12-small col-8-xlarge off-2-xlarge">
+        <h3 class="major align-left">
+          Ubicación
+        </h3>
+        <p>
+          Encuéntranos en Circunvalacion de Mazatenango KM 160 CA-2, junto a bóveda que va a San Francisco Zapotitlan, Mazatenango, Suchitepéquez.
+        </p>
+      </div>
+    </div>
+    <div class="row aln-center">
+      <div class="col-12-xsmall col-12-small col-8-xlarge off-2-xlarge">
+        <span class="image">
+          <a
+            href="https://www.google.com/maps/search/Ceramicas%20Modernas/@14.552201342124,-91.513599440087,17z"
+            target="_blank"
+          ><img
+              src="/images/map.jpg"
+              class="map-image"
+            /></a>
+        </span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-12-xsmall col-12-small col-8-xlarge off-2-xlarge">
+        <h3 class="major">
+          Ponte en contacto con nosotros.
+        </h3>
+        <p>
+          Queremos conocer tus comentarios, por favor llena el formulario para hacérnoslos llegar.<br />
+          <span class="orangeText">*Obligatorio</span>
+        </p>
 
-      <div>
-        <div class="fields">
-          <!-- form.nombre -->
-          <div class="field half">
-            <input
-              type="text"
-              value=""
-              placeholder="Nombre y apellido"
-              v-model.trim="$v.form.nombre.$model"
-              :class="status($v.form.nombre)"
-            />
-            <label for="cya-name">Nombre y apellido<span class="orangeText">*</span></label>
-          </div>
-          <!-- form.telefono -->
-          <div class="field half">
-            <input
-              type="text"
-              value=""
-              placeholder="Teléfono"
-              v-model="$v.form.telefono.$model"
-              :class="status($v.form.telefono)"
-            />
-            <label for="cya-telefono">Número de teléfono<span class="orangeText">*</span></label>
-          </div>
-          <!-- form.email -->
-          <div class="field half">
-            <input
-              type="email"
-              value=""
-              placeholder="correo@ejemplo.com"
-              v-model="$v.form.email.$model"
-              :class="status($v.form.email)"
-            />
-            <label for="cya-telefono">Correo Electrónico<span class="orangeText">*</span></label>
-          </div>
-          <!-- form.mensaje -->
-          <div class="field half">
-            <textarea
-              type="text"
-              rows="5"
-              placeholder="correo@ejemplo.com"
-              v-model="$v.form.mensaje.$model"
-              :class="status($v.form.mensaje)"
-            />
-            <label for="cya-telefono">Correo Electrónico<span class="orangeText">*</span></label>
+        <div>
+          <div class="fields">
+            <!-- form.nombre -->
+            <div class="field half">
+              <input
+                type="text"
+                value=""
+                placeholder="Nombre y apellido"
+                v-model.trim="$v.form.nombre.$model"
+                :class="status($v.form.nombre)"
+              />
+              <label for="cya-name">Nombre y apellido<span class="orangeText">*</span></label>
+            </div>
+            <!-- form.telefono -->
+            <div class="field half">
+              <input
+                type="text"
+                value=""
+                placeholder="Teléfono"
+                v-model="$v.form.telefono.$model"
+                :class="status($v.form.telefono)"
+              />
+              <label for="cya-telefono">Número de teléfono<span class="orangeText">*</span></label>
+            </div>
+            <!-- form.email -->
+            <div class="field half">
+              <input
+                type="email"
+                value=""
+                placeholder="correo@ejemplo.com"
+                v-model="$v.form.email.$model"
+                :class="status($v.form.email)"
+              />
+              <label for="cya-telefono">Correo Electrónico<span class="orangeText">*</span></label>
+            </div>
+            <!-- form.mensaje -->
+            <div class="field half">
+              <textarea
+                type="text"
+                rows="5"
+                placeholder="correo@ejemplo.com"
+                v-model="$v.form.mensaje.$model"
+                :class="status($v.form.mensaje)"
+              />
+              <label for="cya-telefono">Correo Electrónico<span class="orangeText">*</span></label>
           </div>
         </div>
         <br /><br />
@@ -78,6 +104,7 @@
       </div>
     </div>
 
+    </div>
     <modal
       v-if="mostrarModal"
       @close="modalCerrado"
@@ -210,5 +237,10 @@ export default {
 }
 textarea {
   resize: none;
+}
+.map-image {
+  border: 1px solid #ff6300 !important;
+  max-width: 85%;
+  max-height: 85%;
 }
 </style>
