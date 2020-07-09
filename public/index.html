@@ -20,6 +20,26 @@
     <noscript>
         <strong>Nuestra pagina necesita tener Javascript habilitado (activado) para funcionar.</strong>
     </noscript>
+    <style>
+        .logo-header {
+            max-height: 192px !important;
+            max-width: 400px !important;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .spacer {
+            height: 70px;
+            width: 100%;
+        }
+    </style>
+
     <!-- Wrapper -->
     <div id="wrapper">
 
@@ -30,8 +50,8 @@
                 <!-- Header -->
                 <header id="header">
                     <div class="logoContainer">
-                        <a href="/" class="logo"><img class="image fit" src="<%= BASE_URL %>images/LogoConstruYa.png"
-                                alt="Constru-Ya"></a>
+                        <a href="/" class="logo"><img class="image fit logo-header"
+                                src="<%= BASE_URL %>images/LogoConstruYa.png" alt="Constru-Ya"></a>
                     </div>
 
                     <div class="socialContainer">
@@ -61,7 +81,7 @@
                 </section>
                 <!-- Footer -->
             </div>
-
+            <div class="spacer"></div>
             <footer id="footer">
                 <div class="footerSlogan">Vivienda prioritaria es progresar</div>
             </footer>
