@@ -8,10 +8,10 @@
             class="icon solid fa-users big-icon"
             aria-hidden="true"
           ></i>
-          <h2>Quiénes Somos</h2>
+          <h2 class="square-721">Quiénes Somos</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
-          <h2>Quiénes Somos</h2>
+          <h2 class="square-721">Quiénes Somos</h2>
           <p>Somos una empresa Guatemalteca, que busca posicionarse como líder inmobiliario a nivel nacional, dedicada a promover Viviendas y a construir sueños.</p>
           <a href="quienes-somos">Ver más</a>
         </div>
@@ -22,14 +22,14 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <span class="fa-stack fa-6x">
+          <span class="fa-stack fa-6x icon-shadow">
             <i class="fas fa-arrow-up fa-stack-1x to-top"></i>
             <i class="fas fa-home fa-stack-2x"></i>
           </span>
-          <h2>Vivienda Prioritaria</h2>
+          <h2 class="square-721">Vivienda Prioritaria</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
-          <h2>Vivienda Prioritaria</h2>
+          <h2 class="square-721">Vivienda Prioritaria</h2>
           <p>
             Es un Programa con el cual fortalecemos el rol eminentemente social de nuestra promotora, que consiste en la Construcción en lote propio.
           </p>
@@ -48,10 +48,10 @@
             class="icon solid fa-file-signature big-icon"
             aria-hidden="true"
           ></i>
-          <h2>Precalifica</h2>
+          <h2 class="square-721">Precalifica</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
-          <h2>Precalifica</h2>
+          <h2 class="square-721">Precalifica</h2>
           <p>
             Llena nuestro Formulario de Precalificación Para Vivienda Prioritaria.
           </p>
@@ -67,12 +67,52 @@
     <!--Productos y Servicios-->
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front productosBG">
-          <!--<i
-            class="icon solid fa-bookmark fa-5x"
+        <div class="flip-card-front">
+          <i
+            class="icon solid fa-box-open big-icon"
             aria-hidden="true"
           ></i>
-          <h4>Productos y Servicios</h4>-->
+          <h2 class="square-721">Productos y Servicios</h2>
+        </div>
+        <div class="flip-card-back fontSizeSmaller">
+          <h2 class="square-721">Productos y Servicios</h2>
+          <ul class="remove-bullets">
+            <li><a href="productos-y-servicios#vivi-prio">Vivienda Prioritaria</a></li>
+            <li><a href="productos-y-servicios#casa-joven">Casa Joven</a></li>
+            <li><a href="productos-y-servicios#casa-mujer">Casa Mujer Próspera</a></li>
+            <li><a href="productos-y-servicios#clp">C. L P. (Construcción en Lote Própio)</a>
+            </li>
+            <li><a href="productos-y-servicios#cuchu-casa">CUCHU-CASA</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Contactanos-->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i
+            class="icon solid fa-envelope-square big-icon"
+            aria-hidden="true"
+          ></i>
+          <h2 class="square-721">Contáctanos</h2>
+        </div>
+        <div class="flip-card-back fontSizeSmaller">
+          <h2 class="square-721">Contáctanos</h2>
+          <ul class="contact">
+            <li class="icon solid fa-home"><a href="contactanos">Circunvalación de Mazatenango<br>
+                Km 160 CA-2<br><small>junto a bóveda,
+                  que va a San Francisco Zapotitlan en instalaciones de Cerámicas Modernas, Mazatenango.</small></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Productos y Servicios-->
+    <!--<div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front productosBG">
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2>Productos y Servicios</h2>
@@ -86,16 +126,11 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div>-->
     <!--Contactanos-->
-    <div class="flip-card">
+    <!--<div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front contactBG">
-          <!--<i
-            class="icon solid fa-bookmark fa-5x"
-            aria-hidden="true"
-          ></i>
-          <h4>Contactanos</h4>-->
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2>Dirección</h2>
@@ -106,7 +141,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="line-break"></div>
 
@@ -135,7 +170,7 @@ export default {
   width: 30%;
   height: 300px;
   perspective: 1000px;
-  margin: 25px 10px 25px 10px;
+  margin: 25px 20px 25px 20px;
   flex: 0 1 30%;
 }
 
@@ -146,7 +181,7 @@ export default {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
 }
 
@@ -166,7 +201,8 @@ export default {
 }
 
 .flip-card-front {
-  background-color: #ff6300;
+  /*background-color: #ff6300;*/
+  background: url("/images/witewall_3.png");
   color: #000c9e;
   text-transform: capitalize;
   font-weight: bold;
@@ -178,7 +214,7 @@ export default {
   width: 100%;
   text-align: center;
   left: 0;
-  color: #fff;
+  color: #000c9e;
   font-weight: normal;
 }
 
@@ -233,14 +269,14 @@ export default {
 }
 
 .to-top {
-  color: #4bb543 !important;
+  color: #ff6300 !important;
   font-size: 0.8em;
 }
 
-/*.big-icon,
-.fas {
-  color: black;
-}*/
+.big-icon,
+.icon-shadow {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
 
 @media screen and (min-width: 1084px) {
   /*.line-break {
@@ -329,6 +365,9 @@ small-to-xlarge: (min-width: 481px) and (max-width: 1680px)
   }
   .fa-stack {
     font-size: 5em;
+  }
+  .square-721 {
+    font-size: 1.4em;
   }
 }
 </style>
