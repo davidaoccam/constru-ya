@@ -8,7 +8,7 @@
             class="icon solid fa-users big-icon"
             aria-hidden="true"
           ></i>
-          <h2 class="square-721">Quiénes Somos</h2>
+          <h2 class="square-721 front-title front-title">Quiénes Somos</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2 class="square-721">Quiénes Somos</h2>
@@ -26,7 +26,7 @@
             <i class="fas fa-arrow-up fa-stack-1x to-top"></i>
             <i class="fas fa-home fa-stack-2x"></i>
           </span>
-          <h2 class="square-721">Vivienda Prioritaria</h2>
+          <h2 class="square-721 front-title">Vivienda Prioritaria</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2 class="square-721">Vivienda Prioritaria</h2>
@@ -48,7 +48,7 @@
             class="icon solid fa-file-signature big-icon"
             aria-hidden="true"
           ></i>
-          <h2 class="square-721">Precalifica</h2>
+          <h2 class="square-721 front-title">Precalifica</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2 class="square-721">Precalifica</h2>
@@ -72,7 +72,7 @@
             class="icon solid fa-box-open big-icon"
             aria-hidden="true"
           ></i>
-          <h2 class="square-721">Productos y Servicios</h2>
+          <h2 class="square-721 front-title">Productos y Servicios</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2 class="square-721">Productos y Servicios</h2>
@@ -91,48 +91,16 @@
     <!--Contactanos-->
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <i
-            class="icon solid fa-envelope-square big-icon"
-            aria-hidden="true"
-          ></i>
-          <h2 class="square-721">Contáctanos</h2>
-        </div>
-        <div class="flip-card-back fontSizeSmaller">
-          <h2 class="square-721">Contáctanos</h2>
-          <ul class="contact">
-            <li class="icon solid fa-home"><a href="contactanos">Circunvalación de Mazatenango<br>
-                Km 160 CA-2<br><small>junto a bóveda,
-                  que va a San Francisco Zapotitlan en instalaciones de Cerámicas Modernas, Mazatenango.</small></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--Productos y Servicios-->
-    <!--<div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front productosBG">
-        </div>
-        <div class="flip-card-back fontSizeSmaller">
-          <h2>Productos y Servicios</h2>
-          <ul class="remove-bullets">
-            <li><a href="productos-y-servicios#vivi-prio">Vivienda Prioritaria</a></li>
-            <li><a href="productos-y-servicios#casa-joven">Casa Joven</a></li>
-            <li><a href="productos-y-servicios#casa-mujer">Casa Mujer Próspera</a></li>
-            <li><a href="productos-y-servicios#clp">C. L P. (Construcción en Lote Própio)</a>
-            </li>
-            <li><a href="productos-y-servicios#cuchu-casa">CUCHU-CASA</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
-    <!--Contactanos-->
-    <!--<div class="flip-card">
-      <div class="flip-card-inner">
         <div class="flip-card-front contactBG">
+          <!--<img
+            class="flip-card-img"
+            src="/images/squares/familia-vivienda-prioritaria.jpg"
+          />-->
+          <h2 class="square-721 front-title">Contáctanos</h2>
         </div>
-        <div class="flip-card-back fontSizeSmaller">
+        <div class="
+            flip-card-back
+            fontSizeSmaller">
           <h2>Dirección</h2>
           <ul class="contact">
             <li class="icon solid fa-home"><a href="contactanos">Circunvalación de Mazatenango<br>
@@ -141,7 +109,7 @@
           </ul>
         </div>
       </div>
-    </div>-->
+    </div>
 
     <div class="line-break"></div>
 
@@ -161,6 +129,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
+  margin-bottom: 25px;
 }
 
 .flip-card {
@@ -197,7 +166,7 @@ export default {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 25px;
-  padding: 1em;
+  padding: 0.75em;
 }
 
 .flip-card-front {
@@ -214,8 +183,24 @@ export default {
   width: 100%;
   text-align: center;
   left: 0;
-  color: #000c9e;
+  /*color: #000c9e;*/
   font-weight: normal;
+}
+
+.front-title {
+  /*background: url("/images/witewall_3.png");*/
+  background-color: #000c9e;
+  color: #fff;
+  height: 15%;
+  border-radius: 15px;
+  border: 2px solid #ff6300;
+}
+
+.flip-card-img {
+  width: 85%;
+  height: 85%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
 .quienesBG {
@@ -229,7 +214,7 @@ export default {
 }
 
 .contactBG {
-  background-image: url("/images/squares/contactanos.jpg");
+  background-image: url("/images/squares/familia-vivienda-prioritaria.jpg");
   background-size: 100% 100%;
 }
 
@@ -278,24 +263,6 @@ export default {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 1084px) {
-  /*.line-break {
-    width: 100%;
-  }*/
-}
-/*
-
-xlarge: [1281px, 1680px]
-large: [981px, 1280px]
-medium: [737px, 980px]
-small: [481px, 736px]
-
-xsmall: [361px, 480px]
-xxsmall: [null, 360px]
-xlarge-to-max: (min-width: 1681px)
-small-to-xlarge: (min-width: 481px) and (max-width: 1680px)
-
-*/
 @media screen and (min-width: 1px) {
   .line-break {
     width: 0%;
