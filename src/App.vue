@@ -4,34 +4,37 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <i
-            class="icon solid fa-users big-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="icon solid fa-users big-icon" aria-hidden="true"></i>
           <h2 class="square-721 front-title front-title">Quiénes Somos</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2 class="square-721">Quiénes Somos</h2>
-          <p>Somos una empresa Guatemalteca, que busca posicionarse como líder inmobiliario a nivel nacional, dedicada a promover Viviendas y a construir sueños.</p>
+          <p>
+            Somos una empresa Guatemalteca, que busca posicionarse como líder
+            inmobiliario a nivel nacional, dedicada a promover Viviendas y a
+            construir sueños.
+          </p>
           <a href="quienes-somos">Ver más</a>
         </div>
       </div>
     </div>
 
-    <!--Vivienda Prioritaria-->
+    <!--Vivienda Para Todos-->
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <span class="fa-stack fa-6x icon-shadow">
+        <div class="flip-card-front vi-prio-BG">
+          <!--<span class="fa-stack fa-6x icon-shadow">
             <i class="fas fa-arrow-up fa-stack-1x to-top"></i>
             <i class="fas fa-home fa-stack-2x"></i>
-          </span>
-          <h2 class="square-721 front-title">Vivienda Prioritaria</h2>
+          </span>-->
+          <h2 class="square-721 front-title">Vivienda Para Todos</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
-          <h2 class="square-721">Vivienda Prioritaria</h2>
+          <h2 class="square-721">Vivienda Para Todos</h2>
           <p>
-            Es un Programa con el cual fortalecemos el rol eminentemente social de nuestra promotora, que consiste en la Construcción en lote propio.
+            Es un Programa con el cual fortalecemos el rol eminentemente social
+            de nuestra promotora, que consiste en la Construcción en lote
+            propio.
           </p>
           <a href="productos-y-servicios#vivi-prio">
             Ver más
@@ -53,7 +56,8 @@
         <div class="flip-card-back fontSizeSmaller">
           <h2 class="square-721">Precalifica</h2>
           <p>
-            Llena nuestro Formulario de Precalificación Para Vivienda Prioritaria.
+            Llena nuestro Formulario de Precalificación Para Vivienda Para
+            Todos.
           </p>
           <a href="precalifica">
             Llenar
@@ -68,19 +72,23 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <i
-            class="icon solid fa-box-open big-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="icon solid fa-box-open big-icon" aria-hidden="true"></i>
           <h2 class="square-721 front-title">Productos y Servicios</h2>
         </div>
         <div class="flip-card-back fontSizeSmaller">
           <h2 class="square-721">Productos y Servicios</h2>
           <ul class="remove-bullets">
-            <li><a href="productos-y-servicios#vivi-prio">Vivienda Prioritaria</a></li>
+            <li>
+              <a href="productos-y-servicios#vivi-prio">Vivienda Para Todos</a>
+            </li>
             <li><a href="productos-y-servicios#casa-joven">Casa Joven</a></li>
-            <li><a href="productos-y-servicios#casa-mujer">Casa Mujer Próspera</a></li>
-            <li><a href="productos-y-servicios#clp">C. L P. (Construcción en Lote Própio)</a>
+            <li>
+              <a href="productos-y-servicios#casa-mujer">Casa Mujer Próspera</a>
+            </li>
+            <li>
+              <a href="productos-y-servicios#clp"
+                >C. L P. (Construcción en Lote Própio)</a
+              >
             </li>
             <li><a href="productos-y-servicios#cuchu-casa">CUCHU-CASA</a></li>
           </ul>
@@ -98,21 +106,28 @@
           />-->
           <h2 class="square-721 front-title">Contáctanos</h2>
         </div>
-        <div class="
+        <div
+          class="
             flip-card-back
-            fontSizeSmaller">
+            fontSizeSmaller"
+        >
           <h2>Dirección</h2>
           <ul class="contact">
-            <li class="icon solid fa-home"><a href="contactanos">Circunvalación de Mazatenango<br>
-                Km 160 CA-2<br><small>junto a bóveda,
-                  que va a San Francisco Zapotitlan en instalaciones de Cerámicas Modernas, Mazatenango.</small></a></li>
+            <li class="icon solid fa-home">
+              <a href="contactanos"
+                >Circunvalación de Mazatenango<br />
+                Km 160 CA-2<br /><small
+                  >junto a bóveda, que va a San Francisco Zapotitlan en
+                  instalaciones de Cerámicas Modernas, Mazatenango.</small
+                ></a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="line-break"></div>
-
   </div>
 </template>
 
@@ -215,6 +230,11 @@ export default {
 
 .contactBG {
   background-image: url("/images/squares/familia-vivienda-prioritaria.jpg");
+  background-size: 100% 100%;
+}
+
+.vi-prio-BG {
+  background-image: url("/images/squares/CASA-2.jpg");
   background-size: 100% 100%;
 }
 
